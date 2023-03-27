@@ -24,6 +24,14 @@ bool BitmapImage::save(std::string name) {
     return false;
 }
 
+bool BitmapImage::resize(int width, int height) {
+    // resize buffer
+    this->width = width;
+    this->height = height;
+
+    return true;
+}
+
 BitmapImage::~BitmapImage() {
     delete[] buffer;
 }
