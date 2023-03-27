@@ -13,9 +13,10 @@ public:
 
 private:
     int width, height;
-    char* buffer;
+    char channels;
+    char depth;
+    int* buffer;
     std::string name;
 };
-
 
 #endif //GIT_EXAMPLE_IMAGE_VIEWER_BITMAPIMAGE_H
